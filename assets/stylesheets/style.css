@@ -1,3 +1,22 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+
 /* reset
 http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -120,3 +139,144 @@ HERO STYLES
 .titleText h2 {
     font-size: 4rem;
 }
+/*
+TOP TRI-ROW
+*/
+.topTriRow section {
+    max-width: 32.3333%;
+    float: left;
+    padding: .5%;
+    margin-top: 10%;
+    text-align: center;
+  }
+.topTriRow h3 {
+    text-transform: uppercase;
+  }
+.topTriRow img {
+    max-width: 20%;
+    max-width: 20%;
+    margin-left: 1%;
+  }
+.topTriRow {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+/*
+BRING TO LIFE Section
+*/
+.bringToLife {
+    /* margin-left: 10%; */
+    /* margin-right: 10%; */
+    margin:  10%;
+   /*height: 100%;*/
+    position: relative;
+    height: 25%;
+  }
+  .mainBringToLife {
+    max-width: 50%;
+  }
+  .imgBringToLife {
+    max-width: 50%;
+    /* margin-top: -34%; */
+    margin-left: 60%;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .imgBringToLife img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+/*
+Nature Guides
+*/
+.natureGuides {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+.natureGuides section {
+    max-width: 32.6667%;
+  }
+.natureGuides img {
+    max-width: 100%;
+  }
+.natureGuides div {
+    margin-left: 20%;
+    margin-right: 10%;
+    background: black;
+    color: white;
+    max-width: 60%;
+    text-align: center;
+  }
+.williams {
+    margin-left: 0;
+    margin-right: 1%;
+    float: left;
+  }
+.lake {
+    margin-left: 0;
+    margin-right: 1%;
+    float: left;
+  }
+.smith {
+    margin-left: 0;
+    margin-right: 0;
+    float: left;
+  }
+
+/* 
+Grid Section
+*/
+.plantbook {
+    float: left;
+    margin: 5% 10%;
+    max-height: 100%;
+    width: 100%;
+  }
+.plantbookColumnOne {
+    width: 26.6667%;
+    margin: 0;
+    float: left;
+  }
+.columnBlockOne, .columnBlockTwo, .columnBlockThree, .columnBlockFour, .columnBlockFive, .columnBlockSix, .columnBlockSeven {
+    max-height: 100%;
+    max-width: 100%;
+    margin: 2% 1%;
+  }
+#plantOne {
+    max-width: 100%;
+  }
+#plantTwo {
+   max-width: 100%;
+  }
+.plantbookColumnTwo {
+    width: 26.6667%;
+    float: left;
+  }
+#plantThree {
+    max-width: 100%;
+  }
+#plantFour {
+    max-width: 100%;
+    margin-left: .8%;
+  }
+#plantFive {
+    max-width: 98%;
+    margin-left: .8%;
+  }
+.plantbookColumnThree {
+    width: 26.6667%;
+    height: 100%;
+    float: left;
+  }
+.columnBlockFive, .columnBlockSix {
+    max-height: 50%;
+  }
+#plantSix {
+    max-width: 100%;
+  }
+#plantSeven {
+    max-width: 100%;
+    margin-top: 2%;
+  }
