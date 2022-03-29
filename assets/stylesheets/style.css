@@ -81,7 +81,10 @@ body {
 }
 a {
     text-decoration: none;
-    color: goldenrod;
+    color: #daa520;
+}
+p, span{
+    font-family: 'Palanquin', sans-serif;
 }
 /*
 HEADER STYLE
@@ -114,14 +117,13 @@ header li {
 }
 .headerRight{
     flex-basis: 20%;
-    /* border: 2px solid white; */
 }
 /* 
 HERO STYLES
 */
 .hero{
     display: flex;
-    height: 800px;
+    height: 600px;
     background-image: 
         url("../images/darkLeafHeader.jpg");
     background-size: cover;
@@ -131,45 +133,55 @@ HERO STYLES
     display: flex;
     justify-content: center;
     align-self: flex-end;
-    flex-basis: 80%;
+    flex-basis: 100%;
 }
 .titleText h1 {
     font-size: 11rem;
+    font-family: 'Megrim', cursive;
 }
 .titleText h2 {
     font-size: 4rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: italic;
 }
 /*
 TOP TRI-ROW
 */
-.topTriRow section {
-    max-width: 32.3333%;
-    float: left;
-    padding: .5%;
-    margin-top: 10%;
-    text-align: center;
-  }
+.topTriRow {
+    display: flex;
+    margin-top: 8%;
+}
 .topTriRow h3 {
     text-transform: uppercase;
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
   }
+.topTriRow p {
+    line-height: 2rem;
+    font-size: 1.05rem;
+}
+.topTriRow section {
+    max-width: 32.6667%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 .topTriRow img {
-    max-width: 20%;
-    max-width: 20%;
-    margin-left: 1%;
+    max-width: 15%;
+    margin-left: 43%;;
   }
-.topTriRow {
-    margin-left: 10%;
+.topTriRow div {
+    margin-left: 20%;
     margin-right: 10%;
+    background: black;
+    color: white;
+    max-width: 60%;
+    text-align: center;
   }
-
 /*
 BRING TO LIFE Section
 */
 .bringToLife {
-    /* margin-left: 10%; */
-    /* margin-right: 10%; */
     margin:  10%;
-   /*height: 100%;*/
     position: relative;
     height: 25%;
   }
@@ -178,7 +190,6 @@ BRING TO LIFE Section
   }
   .imgBringToLife {
     max-width: 50%;
-    /* margin-top: -34%; */
     margin-left: 60%;
     position: absolute;
     right: 0;
@@ -188,20 +199,44 @@ BRING TO LIFE Section
     max-width: 100%;
     max-height: 100%;
   }
+  .mainBringToLife h2{
+      font-size: 4rem;
+      font-family: 'Josefin Sans', sans-serif;
+  }
+  .mainBringToLife p{
+      font-size: 1.5rem;
+      line-height: 2em;
+  }
 /*
 Nature Guides
 */
-.natureGuides {
-    margin-left: 10%;
-    margin-right: 10%;
+.meetNatureGoddesses {
+    font-size: 4rem;
+    margin-bottom: 3%;
+    font-family: 'Megrim', cursive;
+    text-align: center;
+    text-transform: uppercase;
+}
+.natureGoddesses {
+    display: flex;
   }
-.natureGuides section {
+.natureGoddesses section {
     max-width: 32.6667%;
   }
-.natureGuides img {
+.natureGoddesses img {
     max-width: 100%;
   }
-.natureGuides div {
+.goddessName{
+    font-size: 2.2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+}
+.goddessTitle {
+    font-size: 1.5rem;
+    font-family: 'Julius Sans One', sans-serif;
+    text-transform: lowercase;
+}
+.natureGoddesses div {
     margin-left: 20%;
     margin-right: 10%;
     background: black;
@@ -209,74 +244,114 @@ Nature Guides
     max-width: 60%;
     text-align: center;
   }
-.williams {
+.mina {
     margin-left: 0;
     margin-right: 1%;
-    float: left;
+    justify-self: flex-start;
   }
-.lake {
+.alissa {
     margin-left: 0;
     margin-right: 1%;
-    float: left;
+    justify-self: center;
   }
-.smith {
-    margin-left: 0;
-    margin-right: 0;
-    float: left;
+.jenny {
+    justify-self: flex-end;
   }
 
-/* 
-Grid Section
+/*
+PLANT GRID
 */
-.plantbook {
-    float: left;
-    margin: 5% 10%;
-    max-height: 100%;
+.featuredPlants{
+    font-size: 4rem;
+    font-family: 'Megrim', cursive;
+    margin-bottom: 3%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.plantbook{
+    margin-top: 8%;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+.row2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+.row3 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin: .25px;
+    vertical-align: middle;
     width: 100%;
+    height: 85%;
   }
-.plantbookColumnOne {
-    width: 26.6667%;
-    margin: 0;
-    float: left;
+  .plantbook img:hover{
+    -webkit-transform:scale(1.3); /* Safari and Chrome */-moz-transform:scale(1.3); /* Firefox */-ms-transform:scale(1.3); /* IE 9 */-o-transform:scale(1.3); /* Opera */transform:scale(1.3);
+    -webkit-transition: 0.5s ease;transition: 0.5s ease;
   }
-.columnBlockOne, .columnBlockTwo, .columnBlockThree, .columnBlockFour, .columnBlockFive, .columnBlockSix, .columnBlockSeven {
-    max-height: 100%;
-    max-width: 100%;
-    margin: 2% 1%;
+  .plantCaption .plantName{
+    font-size: 3.5rem;
+    font-family: 'Megrim', cursive;
+    text-transform: uppercase;
+    text-align: center;
   }
-#plantOne {
-    max-width: 100%;
+  .plantCaption .scientificName{
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: italic;
+    text-align: center;
+    text-transform: lowercase;
   }
-#plantTwo {
-   max-width: 100%;
+  .plantCaption .soldOut{
+    font-size: 2rem;
+    text-align: center;
   }
-.plantbookColumnTwo {
-    width: 26.6667%;
-    float: left;
+  .plantCaption {
+    display: none;
+    position: relative;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    text-align: center;
+    color: #fff;
+    -webkit-transition: all .35s;-moz-transition: all .35s;transition: all .35s;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
   }
-#plantThree {
-    max-width: 100%;
+  .plantbook img:hover + .plantCaption {
+    display: block;
+    opacity: 1;
+    background: none;
+    height: auto;
+    background: rgba(0, 0, 0,.45);
   }
-#plantFour {
-    max-width: 100%;
-    margin-left: .8%;
+  /* two column-layout instead of four */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
   }
-#plantFive {
-    max-width: 98%;
-    margin-left: .8%;
-  }
-.plantbookColumnThree {
-    width: 26.6667%;
-    height: 100%;
-    float: left;
-  }
-.columnBlockFive, .columnBlockSix {
-    max-height: 50%;
-  }
-#plantSix {
-    max-width: 100%;
-  }
-#plantSeven {
-    max-width: 100%;
-    margin-top: 2%;
+  
+  /* two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
   }

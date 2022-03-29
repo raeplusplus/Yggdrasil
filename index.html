@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--font imports-->
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Julius+Sans+One&family=Megrim&family=Palanquin:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/stylesheets/style.css">
     <title>Yggdrasil</title>
 </head>
@@ -13,13 +15,13 @@
             
         </section>
         <section class="headerMiddle">
-            <nav>
+            <!-- <nav>
                 <ul>
                     <li><a href="about.html">About</a></li>
                     <li><a href="shop.html">Shop</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </nav>
+            </nav> -->
         </section>
         <section class="headerRight">
 
@@ -28,7 +30,7 @@
     <!--Hero Section-->
     <section class="hero">
         <section class="titleText">
-            <h1>Yggdrasil</h1>
+            <h1>Yggdrasil</h1><br>
             <h2>(The Realm Of Life)</h2>
         </section>
         <!--a sales box in the bottom left corner-->
@@ -40,96 +42,180 @@
     </section>
     <!--the little row of services-->
 		<section class="topTriRow clearfix">
-			<section> 
+			<section class="topTriRow1"> 
                 <!--replace the star imgs with little plant icons-->
-				<img src="assets/css/star.png" alt="star">
-				<h3>Expert Horticulturists</h3>
-				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti adipisci ullam similique quos consequuntur enim quasi dicta!</p>
+				<img src="assets/images/expert-horticulturists.png" alt="seedling with hands icon">
+                <div>
+				    <h3>Expert Horticulturists</h3>
+				    <p>You can always trust our award-winning team to provide you with quality service and guidance on your journey</p>
+                </div>
 			</section>
-			<section>
-				<img src="assets/css/star.png" alt="star">
-				<h3>Quality Supplies</h3>
-				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti adipisci ullam similique quos consequuntur enim quasi dicta!</p>
+			<section class="topTriRow2">
+				<img src="assets/images/quality-supplies.png" alt="watering plant icon">
+                <div>
+				    <h3>Quality Supplies</h3>
+				    <p>We pride ourselves in delivering only the best top-of-the-line supplies to our customers. Never worry about quality again.</p>
+                </div>
 			</section>
-			<section>
-				<img src="assets/css/star.png" alt="star">
-				<h3>Beautiful Plants</h3>
-				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti adipisci ullam similique quos consequuntur enim quasi dicta!</p>
+			<section class="topTriRow3">
+				<img src="assets/images/beautiful-plants.png" alt="plant icon">
+                <div>
+				    <h3>Beautiful Plants</h3>
+				    <p>All of our plants are upheld to our own high standards of health and beauty.</p>
+                </div>
 			</section>
 		</section>
-    <!--This section will contain two sections, plit in half-->
-    <section>
-        <section></section>
-        <section></section>
-    </section>
-    <!--section three-->
 		<section class="bringToLife">
 			<section class="mainBringToLife">
-				<h2>Bring Your Home To Life</h2>
-				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint atque accusantium est, ipsum nisi blanditiis nam officia sunt, animi possimus, non quidem obcaecati? Ex quaerat numquam hic sed voluptatem autem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas veritatis ex enim reprehenderit cum facere minus animi quis quasi. Id?
+				<h2>Bring Your Realm To Life</h2>
+				<p>No matter if you're a homebody, a workaholic, or a kindred plant parent - Yggdrasil has the plants you need to breathe new life into any realm you haunt. Simply let one of our Nature Goddesses know what vision you have for your space and we'll do the rest. Or pick your plants yourself from our extensive selection.
 				</p>
 				<span><a href="#">Read More</a></span>
 			</section>
 			<section class="imgBringToLife">
-				<img src="assets/css/client in char.jpg" alt="#">
+                <div>
+                    <img class="topSlideShow" src="assets/images/familyRoom.jpg" alt="Man reads book to his daughter">
+                    <img class="topSlideShow" src="assets/images/officeSpace.jpg" alt="">
+                    <img class="topSlideShow" src="assets/images/yogaLivingRoom.jpg" alt="">
+                    <img class="topSlideShow" src="assets/images/homeOffice.jpg" alt="">
+                    <img class="topSlideShow" src="assets/images/greenMeditationRoom.jpg" alt="">
+                    <button class="button display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="button display-right" onclick="plusDivs(+1)">&#10095;</button>
+                </div>
+				
 			</section>
-		</section><!--section of the three nature guides--><section class="natureGuides clear">
-			<section class="williams">
-				<img src="assets/css/stylist 1.jpg" alt="#">
+		</section><!--section of the three nature guides--><h2 class="meetNatureGoddesses">Meet Your Nature Goddesses</h2><section class="natureGoddesses clear">
+			<section class="mina">
+				<img src="assets/images/mina-divakar.jpg" alt="Mina Divakar">
 				<div>
-					<span>Alta Williams</span><br>
-					<span>Colourist</span>
+					<span class="goddessName">Mina Divakar</span><br>
+					<span class="goddessTitle">goddess of commerce</span>
 				</div>
 			</section>
-			<section class="lake">
-				<img src="assets/css/stylist 2.jpg" alt="#">
+			<section class="alissa">
+				<img src="assets/images/alissa-jones.jpg" alt="Alissa Jones">
 				<div>
-					<span>Ayesha Lake</span><br>
-					<span>Styler</span>
+					<span class="goddessName">Alissa Jones</span><br>
+					<span class="goddessTitle">the all-goddess</span>
 				</div>
 			</section>
-			<section class="smith">
-				<img src="assets/css/stylist 3.jpg" alt="#">
+			<section class="jenny">
+				<img src="assets/images/jenny-tan.jpg" alt="Jenny Tan">
 				<div>
-					<span>Smith Mitchell</span><br>
-					<span>Beautician</span>
+					<span class="goddessName">Jenny Tan</span><br>
+					<span class="goddessTitle">goddess of cultivation</span>
 				</div>
 			</section>
 		</section>
         <!--the grid of plants-->
 		<section class="plantbook">
-			<h2>Our Featured Plants</h2>
-			<section class="plantbookColumnOne">
-				<section class="columnBlockOne">
-					<img alt="Plant 1" id="plantOne">
+			<h2 class="featuredPlants">Our Featured Plants</h2>
+			<section class="row">
+				<section class="column">
+					<img src="assets/images/aloe-vera.jpg" alt="Aloe Vera">
+                    <div class="plantCaption">
+                        <span class="plantName">Aloe Vera</span><br>
+                        <span class="scientificName">(aloe vera)</span><br>
+                        <span class="soldOut">sold out</span>
+                    </div>
 				</section>
-				<section class="columnBlockTwo">
-					<img alt="Plant 2" id="plantTwo">
+				<section class="column">
+					<img src="assets/images/ficus-elastica.jpg" alt="Rubber Plant">
+                    <div class="plantCaption">
+                        <span class="plantName">Rubber Plant</span><br>
+                        <span class="scientificName">(ficus elastica)</span><br>
+                        <span class="soldOut">sold out</span>
+                    </div>
 				</section>
+                <section class="column">
+                    <img src="assets/images/ixora-coccinea.jpg" alt="Ixora">
+                    <div class="plantCaption">
+                        <span class="plantName">Ixora</span><br>
+                        <span class="scientificName">(ixora coccinea)</span><br>
+                        <span class="soldOut">sold out</span>
+                    </div>
+                </section>
+                <section class="column">
+                    <img src="assets/images/matteuccia-struthiopteris.jpg" alt="">
+                    <div class="plantCaption">
+                        <span class="plantName">Ostrich Fern</span><br>
+                        <span class="scientificName">(matteuccia struthiopteris)</span><br>
+                        <span class="soldOut">sold out</span>
+                    </div>
+                </section>
 			</section>
-			<section class="plantbookColumnTwo">
-				<section class="columnBlockThree">
-					<img alt="Plant 3" id="plantThree">
+			<section class="row2">
+				<section class="column">
+					<img src="assets/images/haworthiopsis-reinwardtii.jpg" alt="Plant 3">
+                    <div class="plantCaption">
+                        <span class="plantName">Zebra Wart</span><br>
+                        <span class="scientificName">(haworthiopsis reinwardtii)</span><br>
+                        <span class="soldOut">sold out</span>
+                    </div>
 				</section>
-				<section class="columnBlockFour">
-					<img alt="Plant 4" id="plantFour">
+				<section class="column">
+					<img src="assets/images/streptocarpus-sect-saintpaulia.jpg" alt="African Violet">
+                    <div class="plantCaption">
+                        <span class="plantName">African Violet</span><br>
+                        <span class="scientificName">(streptocarpus sect. saint paulia)</span><br>
+                        <span class="soldOut">sold out</span>
+                    </div>
 				</section>
-				<section class="columnBlockFive">
-					<img alt="Plant 5" id="plantFive">
+				<section class="column">
+					<img src="assets/images/monstera-deliciosa.jpg" alt="Monstera">
+                    <div class="plantCaption">
+                        <span class="plantName">Monstera</span><br>
+                        <span class="scientificName">(monstera deliciosa)</span><br>
+                        <span class="soldOut">sold out</span>
+                    </div>
 				</section>
+                <section class="column">
+                    <img src="assets/images/hippeastrum-amaryllidaceae.jpg" alt="Red & White Amaryllis">
+                    <div class="plantCaption">
+                        <span class="plantName">Amaryllis</span><br>
+                        <span class="scientificName">(hippeastrum amaryllidacea)</span><br>
+                        <span class="soldOut">sold out</span>
+                    </div>
+                </section>
 			</section>
-			<section class="plantbookColumnThree">
-				<section class="columnBlockSix">
-					<img alt="Plant 6" id="plantSix">
+			<section class="row3">
+				<section class="column">
+					<img src="assets/images/primula-belarina.jpg" alt="Blue Primrose">
+                    <div class="plantCaption">
+                        <span class="plantName">Blue Primrose</span><br>
+                        <span class="scientificName">(primula belarina)</span><br>
+                        <span class="soldOut">sold out</span>
+                    </div>
 				</section>
-				<section class="columnBlockSeven">
-					<img alt="Plant 7" id="plantSeven">
+				<section class="column">
+					<img src="assets/images/sansevieria-trifasciata.jpg" alt="Snake Plant">
+                    <div class="plantCaption">
+                        <span class="plantName">Snake Plant</span><br>
+                        <span class="scientificName">(sansevieria trifasciata)</span><br>
+                        <span class="soldOut">sold out</span>
+                    </div>
 				</section>
+                <section class="column">
+                    <img src="assets/images/dendrobium-kingianum.jpg" alt="Pink Orchid">
+                    <div class="plantCaption">
+                        <span class="plantName">Pink Orchid</span><br>
+                        <span class="scientificName">(dendrobium kingianum)</span><br>
+                        <span class="soldOut">sold out</span>
+                    </div>
+                </section>
+                <section class="column">
+                    <img src="assets/images/spathiphyllum-wallisii.jpg" alt="Peace Lily">
+                    <div class="plantCaption">
+                        <span class="plantName">Peace Lily</span><br>
+                        <span class="scientificName">(spathiphyllum wallisii)</span><br>
+                        <span class="soldOut">sold out</span>
+                    </div>
+                </section>
 			</section>
 		</section>
 		<script type="text/javascript" src="yggdrasil.js"></script>
     <footer class="clear">
-        <span><a href="https://raeshellerose.netlify.app">Copyright * 2022 - Raeshelle Rose</a></span>
+        <span><a href="https://raeshellerose.netlify.app" target="_blank">Copyright * 2022 - Raeshelle Rose</a></span>
     </footer>
 </body>
 </html>
