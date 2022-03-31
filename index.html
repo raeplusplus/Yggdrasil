@@ -10,6 +10,13 @@
     <title>Yggdrasil</title>
 </head>
 <body>
+    <div class="loader_bg">
+		<div class="loader">
+            <h3>Traversing </h3>
+            <img src="assets/images/loader.gif" alt="loading symbol"/>
+            <h3> The Bifrost</h3>
+        </div>
+	 </div>
     <header>
         <section class="headerLeft">
             
@@ -74,15 +81,14 @@
 			</section>
 			<section class="imgBringToLife">
                 <div>
+                    <!-- <button class="button display-left" onclick="plusDivs(-1)">&#10094;</button> -->
                     <img class="topSlideShow" src="assets/images/familyRoom.jpg" alt="Man reads book to his daughter">
                     <img class="topSlideShow" src="assets/images/officeSpace.jpg" alt="">
                     <img class="topSlideShow" src="assets/images/yogaLivingRoom.jpg" alt="">
                     <img class="topSlideShow" src="assets/images/homeOffice.jpg" alt="">
                     <img class="topSlideShow" src="assets/images/greenMeditationRoom.jpg" alt="">
-                    <button class="button display-left" onclick="plusDivs(-1)">&#10094;</button>
-                    <button class="button display-right" onclick="plusDivs(+1)">&#10095;</button>
+                    <!-- <button class="button display-right" onclick="plusDivs(+1)">&#10095;</button> -->
                 </div>
-				
 			</section>
 		</section><!--section of the three nature guides--><h2 class="meetNatureGoddesses">Meet Your Nature Goddesses</h2><section class="natureGoddesses clear">
 			<section class="mina">
@@ -213,8 +219,47 @@
                 </section>
 			</section>
 		</section>
+        
 		<script type="text/javascript" src="yggdrasil.js"></script>
     <footer class="clear">
+        <div id="page-content" class="container">
+			<div class="row">
+				<!-----------------Content-------------------->
+				<div class="flex-box no-gutter">
+					<div class="col-sm-12">
+						<div class="box-text">
+							<div class="box-text-inner pd-exlarge-lg pd-small-xs">
+								<div class="heading">
+									<h2>Contact Me</h2>
+								</div>
+								<form class="clearfix" role="form" id="contactForm" method="post" data-netlify="true">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required="required" />
+											</div>
+											<div class="form-group">
+												<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="required" />
+											</div>
+											<div class="form-group">
+												<input type="number" class="form-control" name="phone" id="phone" placeholder="Your Phone Number" required="required" />
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<textarea name="message" id="message" class="form-control" rows="4" cols="25" required="required"
+												placeholder="Message"></textarea>
+											</div>	
+										</div>
+									</div>
+									<button type="submit" id="form-submit" class="btn btn-skin pull-right">Submit</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
         <span><a href="https://raeshellerose.netlify.app" target="_blank">Copyright © 2022 - Raeshelle Rose</a></span>
     </footer>
 </body>
