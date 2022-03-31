@@ -355,26 +355,6 @@ PLANT GRID
     }
   }
 
-  /*
-  CONTACT FORM
-  */
-  footer .contact-form .heading{}
-footer .contact-form .form-group label {font-size: 13px;text-transform: uppercase;font-weight: 700;letter-spacing: 2px;color: #111;}
-
-@media(max-width:767px){
-	footer .contact-info .contact-info-wrapper ul {display: block;width: 100%;}
-}
-
-@media(max-width:500px){
-	footer .contact-info .contact-info-wrapper {padding: 70px 30px 0 60px;}
-	footer .contact-info .contact-info-wrapper .show-map{bottom: 70px;}
-}
-
-/* ---------------------------------------------------------------------------- */
-/* ------------------------------Contact Form---------------------------------- */
-/* ---------------------------------------------------------------------------- */
-#contactForm{margin-top: 100px}
-#contactForm textarea{height: 150px;}
 /* ---------------------------------------------------------------------------- */
 /* --------------------------------Flex-Box------------------------------------ */
 /* ---------------------------------------------------------------------------- */
@@ -462,4 +442,27 @@ LOADER
 .loader h3{
   display: none;
   }
+}
+
+/*
+FOOTER
+*/
+footer {
+  display: flex;
+  font-size: 1.5rem;
+}
+footer div {
+  justify-content: space-between;
+  margin:  5%;
+    margin-bottom: 5%;
+    position: relative;
+    height: 25%;
+}
+.footer-left{
+  justify-content: flex-start;
+  /* border: 3px solid red; */
+}
+.footer-right{
+  align-self: flex-end;
+  /* border: 3px solid blue; */
 }
