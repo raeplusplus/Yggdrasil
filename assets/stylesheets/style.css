@@ -122,9 +122,8 @@ HERO STYLES
     display: flex;
     height: 600px;
     background-image: 
-        url("https://cdn.glitch.global/a9c618c2-9fa5-464a-9484-c61f6a1e9f0f/darkLeafHeader.jpg?v=1648747538370");
+        url("https://cdn.glitch.global/a9c618c2-9fa5-464a-9484-c61f6a1e9f0f/darkLeafHeader-min.jpg?v=1649882080156");
     background-size: cover;
-    border: 2px solid white;
 }
 .titleText{
     display: flex;
@@ -149,9 +148,6 @@ TOP TRI-ROW
     justify-content: space-around;
     margin-top: 8%;
 }
-/* .topTriRow section {
- 
-} */
 .topTriRow img {
   max-width: 15%;
   margin-left: 43%;;
@@ -178,7 +174,8 @@ BRING TO LIFE Section
 */
 .bringToLife {
     margin:  10%;
-    margin-bottom: 18%;
+    margin-bottom: 8%;
+    margin-top: 8%;
     position: relative;
     height: 25%;
   }
@@ -355,9 +352,8 @@ PLANT GRID
     }
   }
 
-/* ---------------------------------------------------------------------------- */
-/* --------------------------------Flex-Box------------------------------------ */
-/* ---------------------------------------------------------------------------- */
+
+/* Flex-Box */
 .flex-box .box-text, 
 .flex-box .box-image {background-repeat: no-repeat;background-position: center center;background-size: cover;display: block;width: 100%;height: 100%;}
 
