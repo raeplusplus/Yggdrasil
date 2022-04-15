@@ -1,9 +1,8 @@
-/* Box Model Hack */
+
 * {
     box-sizing: border-box;
   }
   
-  /* Clear fix hack */
   .clearfix:after {
        content: ".";
        display: block;
@@ -281,41 +280,40 @@ PLANT GRID
     flex-wrap: wrap;
     padding: 0 4px;
   }
-  /* Create four equal columns that sits next to each other */
-  .column {
+.column {
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
   }
   
-  .column img {
+.column img {
     margin: .25px;
     vertical-align: middle;
     width: 100%;
     height: 85%;
   }
-  .plantbook img:hover{
+.plantbook img:hover{
     -webkit-transform:scale(1.3); /* Safari and Chrome */-moz-transform:scale(1.3); /* Firefox */-ms-transform:scale(1.3); /* IE 9 */-o-transform:scale(1.3); /* Opera */transform:scale(1.3);
     -webkit-transition: 0.5s ease;transition: 0.5s ease;
   }
-  .plantCaption .plantName{
+.plantCaption .plantName{
     font-size: 3.5rem;
     font-family: 'Megrim', cursive;
     text-transform: uppercase;
     text-align: center;
   }
-  .plantCaption .scientificName{
+.plantCaption .scientificName{
     font-size: 2rem;
     font-family: 'Josefin Sans', sans-serif;
     font-style: italic;
     text-align: center;
     text-transform: lowercase;
   }
-  .plantCaption .soldOut{
+.plantCaption .soldOut{
     font-size: 2rem;
     text-align: center;
   }
-  .plantCaption {
+.plantCaption {
     display: none;
     position: relative;
     bottom: 0;
@@ -328,7 +326,7 @@ PLANT GRID
     text-align: center;
     transform: translateY(-50%);
   }
-  .plantbook img:hover + .plantCaption {
+.plantbook img:hover + .plantCaption {
     display: block;
     opacity: 1;
     background: none;
@@ -336,16 +334,14 @@ PLANT GRID
     background: rgba(0, 0, 0,.45);
   }
   
-  /* two column-layout instead of four */
-  @media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
     .column {
       flex: 50%;
       max-width: 50%;
     }
   }
   
-  /* two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .column {
       flex: 100%;
       max-width: 100%;
@@ -456,9 +452,7 @@ footer div {
 }
 .footer-left{
   justify-content: flex-start;
-  /* border: 3px solid red; */
 }
 .footer-right{
   align-self: flex-end;
-  /* border: 3px solid blue; */
 }
