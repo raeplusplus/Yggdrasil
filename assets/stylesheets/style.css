@@ -264,25 +264,34 @@ PLANT GRID
 }
 .plantbook{
     margin-top: 8%;
+    max-height: auto;
+    max-width: auto;
 }
 .row {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
+    max-height: auto;
+    max-width: auto;
   }
 .row2 {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
+    max-height: auto;
+    max-width: auto;
   }
 .row3 {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
+    max-height: auto;
+    max-width: auto;
   }
 .column {
     flex: 25%;
     max-width: 25%;
+    max-height: auto;
     padding: 0 4px;
   }
   
@@ -293,8 +302,14 @@ PLANT GRID
     height: 85%;
   }
 .plantbook img:hover{
-    -webkit-transform:scale(1.3); /* Safari and Chrome */-moz-transform:scale(1.3); /* Firefox */-ms-transform:scale(1.3); /* IE 9 */-o-transform:scale(1.3); /* Opera */transform:scale(1.3);
-    -webkit-transition: 0.5s ease;transition: 0.5s ease;
+    -webkit-transform:scale(1.25); /* Safari and Chrome */-moz-transform:scale(.5); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+    transform:scale(1.25);
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    max-height: auto;
+    max-width: auto;
   }
 .plantCaption .plantName{
     font-size: 3.5rem;
