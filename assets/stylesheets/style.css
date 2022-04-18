@@ -509,6 +509,15 @@ MEDIA QUERIES
 }
 
 /*Styles for individual plant pages*/
+.mainBringToLife h3{
+  padding: 1% 0;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.mainBringToLife p{
+  padding: 1% 0;
+}
 .plantCare{
   display: flex;
   flex-direction: column;
@@ -530,8 +539,19 @@ MEDIA QUERIES
   font-size: 1.5rem;
 }
 .plantInfoRow{
-  margin-top: 15%;
+  margin-top: 17%;
 }
-.plantImage {
-  max-height: auto;
+.plantImage img{
+  max-height: 100%;
+  max-width: 70%;
+  border: 5px red solid;
+}
+.cartButton{
+  display:flex;
+  justify-content: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 2rem;
+  background-color: #daa520;
+  color:#000;
 }
