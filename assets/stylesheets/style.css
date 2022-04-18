@@ -82,7 +82,7 @@ a {
     text-decoration: none;
     color: #daa520;
 }
-p, span{
+p, span, li{
     font-family: 'Palanquin', sans-serif;
 }
 /*
@@ -538,13 +538,17 @@ MEDIA QUERIES
   line-height: 2rem;
   font-size: 1.5rem;
 }
+.plantCare li{
+  list-style: circle;
+  line-height: 2rem;
+  font-size: 1.5rem;
+}
 .plantInfoRow{
   margin-top: 17%;
 }
 .plantImage img{
   max-height: 100%;
-  max-width: 70%;
-  border: 5px red solid;
+  max-width: 80%;
 }
 .cartButton{
   display:flex;
