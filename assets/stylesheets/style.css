@@ -423,35 +423,6 @@ PLANT GRID
 	.flex-box .box-text .box-text-inner p{font-size: 15px;}
 }
 /*
-LOADER
-*/
-.loader_bg {
-  position: fixed;
-  z-index: 9999999;
-  background: #000000;
-  width: 100%;
-  height: 100%;
-}
-.loader {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  left: 0;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.loader img {
-  width: 280px;
-}
-@media(max-width:500px){
-.loader h3{
-  display: none;
-  }
-}
-
-/*
 FOOTER
 */
 footer {
@@ -471,3 +442,69 @@ footer div {
 .footer-right{
   align-self: flex-end;
 }
+/*
+MEDIA QUERIES
+*/
+/*MOBILE MEDIA QUERIES*/
+@media (max-width: 640px){
+  .body{
+    background-color: #000;
+  }
+  /*Header*/
+  .hero{
+    background-image:none;
+    background-color: #050f0a;
+    height: 200px;
+  }
+  .titleText{
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items:center;
+  }
+  .yggdrasil{
+    font-size: 8rem;
+  }
+  .realmOfLife{
+    font-size: 4rem;
+  }
+/*Top Three Section*/
+  .topTriRow h3{
+    font-size: 1.6rem;
+    text-align: center;
+  }
+/*Bring To Life Section*/
+/* stack the slideshow below the paragraph section, more of a buffer between slideshow and goddess section*/
+  .bringToLife{
+    margin-top: 12%;
+    margin-bottom: 15%;
+    display: flex;
+    flex-direction: column;
+  }
+  .mainBringToLife{
+    max-width: 100%;
+  }
+  .imgBringToLife{
+    max-width: 100%;
+    align-self: baseline;
+    margin-left: 0;
+    margin-top: 45%;
+  }
+/*Meet your nature goddesses*/
+/* could leave as is, could stack one by one vertically*/
+  .meetNatureGoddesses{
+    margin-top: 50%;
+  }
+  .natureGoddesses{
+    margin-top: 5%;
+  }
+/*Plant Gallary*/
+/* make image sizes smaller so theres less to scroll through. Turn off pop out animation */
+.plantbook img:hover{
+  display: none;
+}
+.plantbook img:hover + .plantCaption{
+  display: none;
+}
+}
+
