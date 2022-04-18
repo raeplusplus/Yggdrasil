@@ -508,3 +508,30 @@ MEDIA QUERIES
 }
 }
 
+/*Styles for individual plant pages*/
+.plantCare{
+  display: flex;
+  flex-direction: column;
+}
+.plantCare section{
+  margin-left: 10%;
+  margin-bottom: 2%;
+}
+.plantCare section{
+  margin-top: 2%;
+}
+.plantCare section h2{
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.plantCare p{
+  line-height: 2rem;
+  font-size: 1.5rem;
+}
+.plantInfoRow{
+  margin-top: 15%;
+}
+.plantImage {
+  max-height: auto;
+}
