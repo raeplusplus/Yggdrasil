@@ -274,20 +274,6 @@ PLANT GRID
     max-height: auto;
     max-width: auto;
   }
-/* .row2 {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-    max-height: auto;
-    max-width: auto;
-  }
-.row3 {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-    max-height: auto;
-    max-width: auto;
-  } */
 .column {
     flex: 25%;
     max-width: 25%;
@@ -295,7 +281,6 @@ PLANT GRID
     padding: 0 4px;
     position: relative; /*added change to fix jumping */
   }
-  
 .column img {
     margin: .25px;
     vertical-align: middle;
@@ -311,7 +296,8 @@ PLANT GRID
     transition: 0.5s ease;
     max-height: auto;
     max-width: auto;
-    position: absolute; /*added change to fix jumping */
+    position: absolute;
+    z-index: 88888;
 }
 .plantCaption .plantName{
     font-size: 3.5rem;
@@ -338,7 +324,8 @@ PLANT GRID
     height: auto;
     text-align: center;
     color: #fff;
-    -webkit-transition: all .35s;-moz-transition: all .35s;transition: all .35s;
+    -webkit-transition: all .35s;-moz-transition: all .35s;
+    transition: all .35s;
     width: 100%;
     text-align: center;
     transform: translateY(-50%);
@@ -349,6 +336,7 @@ PLANT GRID
     background: none;
     height: auto;
     background: rgba(0, 0, 0,.45);
+    z-index: 99999;
   }
   
 @media screen and (max-width: 800px) {
@@ -378,18 +366,37 @@ PLANT GRID
 .flex-box .box-text .title h3{font-weight: 700;color: rgb(255, 255, 255);text-transform: uppercase;font-family: 'Playfair Display', serif;letter-spacing: 3px;}
 .flex-box .box-text .title span{font-size: 24px; font-weight:800;color: rgb(255, 189, 189);text-transform: uppercase;margin: 40px 0 20px;display: block;}
 
-.flex-box .box-text.light-style{background: #fff;}
-.flex-box .box-text.light-style .title h3{}
-.flex-box .box-text.dark-style{background: #262626; color: #bbb;}
-.flex-box .box-text.dark-style p{color: #ddd;}
-.flex-box .box-text.dark-style .title h3{color: #333856;}
-.flex-box .box-text.dark-style .heading h2{color: #fff;}
-.flex-box .box-text.dark-style .social-link li a{color: #f2f2f2;border: 1px solid #f2f2f2;}
-.flex-box .box-text.dark-style .social-link li a:hover{color: #000;border: 1px solid #333856;}
+.flex-box .box-text.light-style{
+  background: #fff;}
+.flex-box .box-text.light-style .title h3{
+
+}
+.flex-box .box-text.dark-style{
+  background: #262626; 
+  color: #bbb;}
+.flex-box .box-text.dark-style p{
+  color: #ddd;}
+.flex-box .box-text.dark-style .title h3{
+  color: #333856;}
+.flex-box .box-text.dark-style .heading h2{
+  color: #fff;}
+.flex-box .box-text.dark-style .social-link li a{
+  color: #f2f2f2;
+  border: 1px solid #f2f2f2;}
+.flex-box .box-text.dark-style .social-link li a:hover{
+  color: #000;
+  border: 1px solid #333856;}
 
 /* Box Image */
-.flex-box .box-image {width: 100%;height: 100%;display: inline-block;position: relative;}
-.flex-box .box-image img {position: absolute;display: block;border-radius: 0;}
+.flex-box .box-image {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: relative;}
+.flex-box .box-image img {
+  position: absolute;
+  display: block;
+  border-radius: 0;}
 /* For browsers that support 'object-fit' */
 @supports ( object-fit: cover ) {
 	.flex-box .box-image img {
@@ -448,116 +455,153 @@ footer div {
 MEDIA QUERIES
 */
 /*MOBILE MEDIA QUERIES*/
-@media (max-width: 640px){
-  .body{
-    background-color: #000;
-  }
-  /*Header*/
-  .hero{
-    background-image:none;
-    background-color: #050f0a;
-    height: 200px;
-  }
-  .titleText{
-    display: flex;
-    justify-content: center;
-    flex-direction:column;
-    align-items:center;
-  }
-  .yggdrasil{
-    font-size: 8rem;
-  }
-  .realmOfLife{
-    font-size: 4rem;
-  }
+/*SMALL SCREENS*/
+@media (min-width: 200px) and (max-width: 700px){
+  /* .plantImage img{
+    max-height: 500px;
+    width: 250px;
+    position: static;
+} */
+.yggdrasil{
+  font-size: 1rem;
+}
+.meetNatureGoddesses{
+  margin-top: 25%;
+}
+.body{
+  background-color: #000;
+}
+/*Header*/
+.hero{
+  background-image:none;
+  background-color: #050f0a;
+  height: 200px;
+}
+.titleText{
+  display: flex;
+  justify-content: center;
+  flex-direction:column;
+  align-items:center;
+}
+.yggdrasil{
+  font-size: 8rem;
+}
+.realmOfLife{
+  font-size: 4rem;
+}
 /*Top Three Section*/
-  .topTriRow h3{
-    font-size: 1.6rem;
-    text-align: center;
-  }
+.topTriRow h3{
+  font-size: 1.6rem;
+  text-align: center;
+}
 /*Bring To Life Section*/
 /* stack the slideshow below the paragraph section, more of a buffer between slideshow and goddess section*/
-  .bringToLife{
-    margin-top: 12%;
-    margin-bottom: 15%;
-    display: flex;
-    flex-direction: column;
-  }
-  .mainBringToLife{
-    max-width: 100%;
-  }
-  .imgBringToLife{
-    max-width: 100%;
-    align-self: baseline;
-    margin-left: 0;
-    margin-top: 45%;
-  }
+.bringToLife{
+  margin-top: 12%;
+  margin-bottom: 15%;
+  display: flex;
+  flex-direction: column;
+}
+.mainBringToLife{
+  max-width: 100%;
+}
+.imgBringToLife{
+  max-width: 100%;
+  margin-left: 0;
+  margin-top: 65%;
+}
 /*Meet your nature goddesses*/
 /* could leave as is, could stack one by one vertically*/
-  .meetNatureGoddesses{
-    margin-top: 50%;
-  }
-  .natureGoddesses{
-    margin-top: 5%;
-  }
+.meetNatureGoddesses{
+  margin-top: 55%;
+}
+.natureGoddesses{
+  margin-top: 5%;
+}
 /*Plant Gallary*/
 /* make image sizes smaller so theres less to scroll through. Turn off pop out animation */
+/* .plantbook{
+  display: flex;
+  flex-direction: row;
+  max-width: 22.6667%;
+} */
 .plantbook img:hover{
-  display: none;
+display: none;
+/* visibility:hidden; */
 }
 .plantbook img:hover + .plantCaption{
-  display: none;
+display: none;
+/* visibility:hidden; */
 }
 }
 
 /*Styles for individual plant pages*/
 .mainBringToLife h3{
-  padding: 1% 0;
-  text-transform: uppercase;
-  font-size: 2rem;
-  font-family: 'Josefin Sans', sans-serif;
+padding: 1% 0;
+text-transform: uppercase;
+font-size: 2rem;
+font-family: 'Josefin Sans', sans-serif;
 }
 .mainBringToLife p{
-  padding: 1% 0;
+padding: 1% 0;
 }
 .plantCare{
-  display: flex;
-  flex-direction: column;
+display: flex;
+flex-direction: column;
 }
 .plantCare section{
-  margin-left: 10%;
-  margin-bottom: 2%;
+margin-left: 10%;
+
+margin-bottom: 2%;
 }
 .plantCare section{
-  margin-top: 2%;
+margin-top: 2%;
 }
 .plantCare section h2{
-  text-transform: uppercase;
-  font-size: 2rem;
-  font-family: 'Josefin Sans', sans-serif;
+text-transform: uppercase;
+font-size: 2rem;
+font-family: 'Josefin Sans', sans-serif;
 }
 .plantCare p{
-  line-height: 2rem;
-  font-size: 1.5rem;
+line-height: 2rem;
+font-size: 1.5rem;
 }
 .plantCare li{
-  list-style: circle;
-  line-height: 2rem;
-  font-size: 1.5rem;
+list-style: circle;
+line-height: 2rem;
+font-size: 1.5rem;
 }
 .plantInfoRow{
-  margin-top: 17%;
+margin-top: 17%;
+padding: 4%;
+border: 4px solid red;
 }
 .plantImage img{
-  max-height: 100%;
-  max-width: 80%;
+max-height: 100%;
+max-width: 80%;
 }
 .cartButton{
-  display:flex;
-  justify-content: center;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  font-size: 2rem;
-  background-color: #daa520;
-  color:#000;
+display:flex;
+justify-content: center;
+margin-top: 2%;
+margin-bottom: 2%;
+font-size: 2rem;
+background-color: #daa520;
+color:#000;
 }
+/*
+MEDIA QURIES
+*/
+
+/* @media(min-width:768px){
+	.flex-box {-moz-align-items: stretch;-webkit-align-items: stretch;-ms-align-items: stretch;align-items: stretch;display: -moz-flex;display: -webkit-flex;display: -ms-flex;display: flex;-moz-flex-direction: row;-webkit-flex-direction: row;-ms-flex-direction: row;flex-direction: row;position: relative;overflow: hidden;}
+	.flex-box .f-right{order: 2;}
+	.box-text .t-right{text-align: right;}
+}
+@media(max-width:767px){
+	.flex-box .box-text{text-align: center;}
+	.flex-box .box-image {height: 400px;width: 100%;}
+}
+@media(max-width:500px){
+	.flex-box .box-text .box-text-inner p{font-size: 15px;}
+} */
