@@ -274,7 +274,7 @@ PLANT GRID
     max-height: auto;
     max-width: auto;
   }
-.row2 {
+/* .row2 {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
@@ -287,12 +287,13 @@ PLANT GRID
     padding: 0 4px;
     max-height: auto;
     max-width: auto;
-  }
+  } */
 .column {
     flex: 25%;
     max-width: 25%;
     max-height: auto;
     padding: 0 4px;
+    position: relative; /*added change to fix jumping */
   }
   
 .column img {
@@ -301,8 +302,8 @@ PLANT GRID
     width: 100%;
     height: 85%;
   }
-.plantbook img:hover{
-    -webkit-transform:scale(1.25); /* Safari and Chrome */-moz-transform:scale(.5); /* Firefox */
+.column img:hover{
+  -webkit-transform:scale(1.25); /* Safari and Chrome */-moz-transform:scale(.5); /* Firefox */
     -ms-transform:scale(1.25); /* IE 9 */
     -o-transform:scale(1.25); /* Opera */
     transform:scale(1.25);
@@ -310,7 +311,8 @@ PLANT GRID
     transition: 0.5s ease;
     max-height: auto;
     max-width: auto;
-  }
+    position: absolute; /*added change to fix jumping */
+}
 .plantCaption .plantName{
     font-size: 3.5rem;
     font-family: 'Megrim', cursive;
