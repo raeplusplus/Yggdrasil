@@ -1,21 +1,18 @@
-
 * {
-    box-sizing: border-box;
-  }
-  
-  .clearfix:after {
-       content: ".";
-       display: block;
-       clear: both;
-       visibility: hidden;
-       line-height: 0;
-       height: 0;
-  }
-  
-  .clear {
-      clear: both;
-  }
-
+  box-sizing: border-box;
+}
+/*do I need clear and clear fix when using flex box? just putting it in for now */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.clear {
+ clear: both;
+}
 /* reset
 http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -34,35 +31,35 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '.';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 /*
 BASE STYLES
@@ -85,365 +82,317 @@ a {
 p, span, li{
     font-family: 'Palanquin', sans-serif;
 }
-/*
-HEADER STYLE
-*/
-header {
-    display: flex;
-    justify-content: space-between;
-    margin: .5% 0;
+/* HEADER STYLES */
+header{
+  display: flex;
+  justify-content: space-between;
+  margin: .5% 0;
 }
-header ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 1.5rem;
+header ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
 }
-header li {
-    justify-content: space-around;
-    flex-basis: 20%;
-    text-align: center;
-    font-size: 2rem;
+header li{
+  justify-content: space-around;
+  flex-basis: 20%;
+  text-align: center;
+  font-size: 2rem;
 }
-.headerLeft {
-    flex-basis: 20%;
+.headerLeft{
+  flex-basis: 20%;
 }
-.headerMiddle {
-    flex-basis: 60%;
+.headerMiddle{
+  flex-basis: 60%;
 }
 .headerRight{
-    flex-basis: 20%;
+  flex-basis: 20%;
 }
-/* 
-HERO STYLES
-*/
+/* HERO STYLES - Desktop - all pages*/
 .hero{
-    display: flex;
-    height: 600px;
-    background-image: 
-        url("https://cdn.glitch.global/a9c618c2-9fa5-464a-9484-c61f6a1e9f0f/darkLeafHeader-min.jpg?v=1649882080156");
-    background-size: cover;
+  display: flex;
+  height: 450px;
+  background-image: url("https://cdn.glitch.global/a9c618c2-9fa5-464a-9484-c61f6a1e9f0f/darkLeafHeader-min.jpg?v=1649882080156");
+  background-size: cover;
 }
 .titleText{
-    display: flex;
-    justify-content: center;
-    align-self: flex-end;
-    flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+  flex-basis: 100%;
 }
-.titleText h1 {
-    font-size: 11rem;
-    font-family: 'Megrim', cursive;
+.titleText h1{
+  font-size: 11rem;
+  font-family: 'Megrim', cursive;
 }
-.titleText h2 {
-    font-size: 4rem;
-    font-family: 'Josefin Sans', sans-serif;
-    font-style: italic;
+.titleText h2{
+  font-size: 4rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: italic;
 }
-/*
-TOP TRI-ROW
-*/
-.topTriRow {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 8%;
+/* HERO STYLES - mobile - all pages*/
+/*media quries here*/
+/* TOP TRI-ROW - Desktop - index page*/
+.topTriRow{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3%;
 }
-.topTriRow img {
+.topTriRow div{
+  margin: 0 20%;
+  color: white;
+  max-width: 60%;
+  text-align: center;
+}
+.topTriRow img{
   max-width: 15%;
-  margin-left: 43%;;
+  margin-left: 43%;
 }
-.topTriRow h3 {
-    text-transform: uppercase;
-    font-size: 2rem;
-    font-family: 'Josefin Sans', sans-serif;
-  }
-.topTriRow p {
-    line-height: 2rem;
-    font-size: 1.05rem;
+.topTriRow h3{
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: 'Josefin Sans', sans-serif;
 }
-.topTriRow div {
-    margin-left: 20%;
-    margin-right: 10%;
-    background: black;
-    color: white;
-    max-width: 60%;
-    text-align: center;
-  }
-/*
-BRING TO LIFE Section
-*/
-.bringToLife {
-    margin:  10%;
-    margin-bottom: 15%;
-    margin-top: 8%;
-    position: relative;
-    height: 25%;
-  }
-  .mainBringToLife {
-    max-width: 50%;
-  }
-  .imgBringToLife {
-    max-width: 50%;
-    margin-left: 60%;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .imgBringToLife img {
-    max-width: 100%;
-    max-height: 100%;
-  }
-  .mainBringToLife h2{
-      font-size: 4rem;
-      font-family: 'Josefin Sans', sans-serif;
-  }
-  .mainBringToLife p{
-      font-size: 1.5rem;
-      line-height: 2em;
-  }
-/*
-Nature Guides
-*/
-.meetNatureGoddesses {
-    font-size: 4rem;
-    margin-bottom: 3%;
-    margin-top: 8%;
-    font-family: 'Megrim', cursive;
-    text-align: center;
-    text-transform: uppercase;
+.topTriRow p{
+  line-height: 2rem;
+  font-size: 1.05rem;
 }
-.natureGoddesses {
-    display: flex;
-  }
-.natureGoddesses section {
-    max-width: 32.6667%;
-  }
-.natureGoddesses img {
-    max-width: 100%;
-  }
-.goddessName{
-    font-size: 2.2rem;
-    font-family: 'Josefin Sans', sans-serif;
-    text-transform: uppercase;
-}
-.goddessTitle {
-    font-size: 1.5rem;
-    font-family: 'Julius Sans One', sans-serif;
-    text-transform: lowercase;
-}
-.natureGoddesses div {
-    margin-left: 20%;
-    margin-right: 10%;
-    background: black;
-    color: white;
-    max-width: 60%;
-    text-align: center;
-  }
-.mina {
-    margin-left: 0;
-    margin-right: 1%;
-    justify-self: flex-start;
-  }
-.alissa {
-    margin-left: 0;
-    margin-right: 1%;
-    justify-self: center;
-  }
-.jenny {
-    justify-self: flex-end;
-  }
+/* TOP TRI-ROW - mobile - index page*/
+@media (){
 
-/*
-PLANT GRID
-*/
+}
+/* PLANT DETAIL ROW - Desktop - single plant pages*/
+
+/*BRING TO LIFE - Desktop - index page */
+.bringToLife{
+  display: flex;
+  margin: 10%;
+  height: 25%;
+}
+.mainBringToLife{
+  max-width: 50%;
+  margin-right: 1.5%;
+}
+.mainBringToLife h2{
+  font-size: 4rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.mainBringToLife p{
+  font-size: 1.5rem;
+  line-height: 2em;
+}
+.imgBringToLife{
+  max-width: 50%;
+  margin-left: 1.5%;
+}
+.imgBringToLife img{
+  max-width: 100%;
+  max-height: 100%;
+}
+/*BRING TO LIFE - Mobile - index page */
+
+/*NATURE GODDESSES - Desktop - index page*/
+.meetNatureGoddesses{
+  font-size: 4rem;
+  margin: 5% 0;
+  font-family: 'Megrim', cursive;
+  text-align: center;
+  text-transform: uppercase;
+}
+.natureGoddesses{
+  display: flex;
+}
+.natureGoddesses section{
+  max-width: 32.6667%;
+}
+.natureGoddesses img{
+  max-width: 100%;
+}
+.natureGoddesses div{
+  margin-left: 20%;
+  margin-right: 10%;
+  padding: 5%;
+  color: white;
+  max-width: 60%;
+  text-align: center;
+}
+.goddessName{
+  font-size: 2.2rem;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+}
+.goddessTitle{
+  font-size: 1.5rem;
+  font-family: 'Julius Sans One', sans-serif;
+  text-transform: lowercase;
+}
+.mina, .alissa{
+  margin-left: 0;
+  margin-right: 1%;
+}
+
+/*NATURE GODDESSES - Mobile - index page*/
+
+/*PLANT GRID - Desktop - all pages*/
 .featuredPlants{
-    font-size: 4rem;
-    font-family: 'Megrim', cursive;
-    margin-bottom: 3%;
-    text-align: center;
-    text-transform: uppercase;
+  font-size: 4rem;
+  font-family: 'Megrim', cursive;
+  margin: 3% 0;
+  text-align: center;
+  text-transform: uppercase;
 }
 .plantbook{
-    margin-top: 8%;
-    max-height: auto;
-    max-width: auto;
+  margin-top: 5%;
+  max-width: auto;
+  max-height: auto;
 }
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-    max-height: auto;
-    max-width: auto;
-  }
-.column {
-    flex: 25%;
-    max-width: 25%;
-    max-height: auto;
-    padding: 0 4px;
-    position: relative; /*added change to fix jumping */
-  }
-.column img {
-    margin: .25px;
-    vertical-align: middle;
-    width: 100%;
-    height: 85%;
-  }
-.column img:hover{
-  -webkit-transform:scale(1.25); /* Safari and Chrome */-moz-transform:scale(.5); /* Firefox */
-    -ms-transform:scale(1.25); /* IE 9 */
-    -o-transform:scale(1.25); /* Opera */
-    transform:scale(1.25);
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease;
-    max-height: auto;
-    max-width: auto;
-    position: absolute;
-    z-index: 88888;
+.plantCaption{
+  display: none;
+  position: relative;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  text-align: center;
+  color: #fff;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
+  width: 100%;
+  text-align: center;
+  transform: translateY(-50%)
 }
 .plantCaption .plantName{
-    font-size: 3.5rem;
-    font-family: 'Megrim', cursive;
-    text-transform: uppercase;
-    text-align: center;
-  }
-.plantCaption .scientificName{
-    font-size: 2rem;
-    font-family: 'Josefin Sans', sans-serif;
-    font-style: italic;
-    text-align: center;
-    text-transform: lowercase;
-  }
-.plantCaption .soldOut{
-    font-size: 2rem;
-    text-align: center;
-  }
-.plantCaption {
-    display: none;
-    position: relative;
-    bottom: 0;
-    width: auto;
-    height: auto;
-    text-align: center;
-    color: #fff;
-    -webkit-transition: all .35s;-moz-transition: all .35s;
-    transition: all .35s;
-    width: 100%;
-    text-align: center;
-    transform: translateY(-50%);
-  }
-.plantbook img:hover + .plantCaption {
-    display: block;
-    opacity: 1;
-    background: none;
-    height: auto;
-    background: rgba(0, 0, 0,.45);
-    z-index: 99999;
-  }
-  
-@media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-@media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
-
-
-/* Flex-Box */
-.flex-box .box-text, 
-.flex-box .box-image {background-repeat: no-repeat;background-position: center center;background-size: cover;display: block;width: 100%;height: 100%;}
-
-/* Box Text */
-.flex-box .box-text {-moz-justify-content: center;-webkit-justify-content: center;-ms-justify-content: center;justify-content: center;-moz-align-items: center;-webkit-align-items: center;-ms-align-items: center;align-items: center;/* display: flex; */}
-.flex-box .box-text .box-text-inner{margin: 0 auto;max-width: 100%;}
-.flex-box .box-text .box-text-inner p{font-size: 18px;font-weight: 300;color: rgb(255, 255, 255);}
-.flex-box .box-text .title {}
-.flex-box .box-text .title h3{font-weight: 700;color: rgb(255, 255, 255);text-transform: uppercase;font-family: 'Playfair Display', serif;letter-spacing: 3px;}
-.flex-box .box-text .title span{font-size: 24px; font-weight:800;color: rgb(255, 189, 189);text-transform: uppercase;margin: 40px 0 20px;display: block;}
-
-.flex-box .box-text.light-style{
-  background: #fff;}
-.flex-box .box-text.light-style .title h3{
-
+  font-size: 3.5rem;
+  font-family: 'Megrim', cursive;
+  text-transform: uppercase;
+  text-align: center;
 }
-.flex-box .box-text.dark-style{
-  background: #262626; 
-  color: #bbb;}
-.flex-box .box-text.dark-style p{
-  color: #ddd;}
-.flex-box .box-text.dark-style .title h3{
-  color: #333856;}
-.flex-box .box-text.dark-style .heading h2{
-  color: #fff;}
-.flex-box .box-text.dark-style .social-link li a{
-  color: #f2f2f2;
-  border: 1px solid #f2f2f2;}
-.flex-box .box-text.dark-style .social-link li a:hover{
-  color: #000;
-  border: 1px solid #333856;}
-
-/* Box Image */
-.flex-box .box-image {
+.plantCaption .scientificName{
+  font-size: 2rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: italic;
+  text-align: center;
+  text-transform: lowercase;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  max-height: auto;
+  max-width: auto;
+}
+.column{
+  flex: 25%;
+  max-width: 25%;
+  max-height: auto;
+  padding: 0 4px;
+  position: relative;
+}
+.column img{
+  margin: .25px;
+  vertical-align: middle;
   width: 100%;
   height: 100%;
-  display: inline-block;
-  position: relative;}
-.flex-box .box-image img {
+}
+.column img:hover{
+  -webkit-transform: scale(1.25); /* Safari & Chrome */
+  -moz-transform: scale(.5);/* Firefox */
+  -ms-transform: scale(1.25);/* IE 9 */
+  -o-transform: scale(1.25);/* Opera */
+  transform: scale(1.25);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5 ease;
+  max-height: auto;
+  max-width: auto;
   position: absolute;
+  z-index: 88888;
+}
+.plantbook img:hover + .plantCaption{
   display: block;
-  border-radius: 0;}
-/* For browsers that support 'object-fit' */
-@supports ( object-fit: cover ) {
-	.flex-box .box-image img {
-		-moz-object-fit: cover;
-		-webkit-object-fit: cover;
-		-ms-object-fit: cover;
-		-o-object-fit: cover;
-		object-fit: cover;
-		-moz-object-position: center;
-		-webkit-object-position: center;
-		-ms-object-position: center;
-		object-position: center;
-		-ms-transform: none;
-		-moz-transform: none;
-		-webkit-transform: none;
-		transform: none;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-	}
+  opacity: 1;
+  background: none;
+  height: auto;
+  background: rgba(0, 0, 0, .45);
+  z-index: 99999;
 }
-@media(min-width:768px){
-	.flex-box {-moz-align-items: stretch;-webkit-align-items: stretch;-ms-align-items: stretch;align-items: stretch;display: -moz-flex;display: -webkit-flex;display: -ms-flex;display: flex;-moz-flex-direction: row;-webkit-flex-direction: row;-ms-flex-direction: row;flex-direction: row;position: relative;overflow: hidden;}
-	.flex-box .f-right{order: 2;}
-	.box-text .t-right{text-align: right;}
+/* PLANT INFO - Desktop - single pages */
+.plantDescriptionGroup{
+  display: flex;
 }
-@media(max-width:767px){
-	.flex-box .box-text{text-align: center;}
-	.flex-box .box-image {height: 400px;width: 100%;}
+.plantDescription h3{
+  padding: 1%;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: 'Josefin Sans', sans-serif;
 }
-@media(max-width:500px){
-	.flex-box .box-text .box-text-inner p{font-size: 15px;}
+.plantDescription p{
+  padding: 1% 0;
 }
-/*
-FOOTER
-*/
-footer {
+.plantImage{
+  max-width: 50%;
+  margin-left: 1.5%;
+  padding: 0 10%;
+  padding-top: 5%;
+}
+.plantImage img{
+  max-height: 80%;
+  max-width: 100%;
+}
+.plantInfoRow{
+  margin-top: 25%;
+  margin-bottom: 8%;
+}
+.cartButton{
+  display:flex;
+  justify-content: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 2rem;
+  background-color: #daa520;
+  color:#000;
+}
+/* PLANT INFO - Mobile - single pages */
+@media (min-width: 100px) and (max-width: 500px){
+  .plantDescription{
+    margin: 0;
+    height: 0;
+    max-width: 100%
+  }
+  .plantImage{
+    display: none;
+  }
+  .plantInfoRow{
+    display: flex;
+    flex-direction:column;
+    margin-top: 70%;
+  }
+  .plantInfoRow section{
+    padding: 5% 0;
+  }
+  .singlePageRow{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  /* .singlePageRow img{
+    max-width: 100%;
+  } */
+  .plantCaption img:hover{
+    display: none;
+  }
+}
+/* FOOTER */
+footer{
   display: flex;
   font-size: 1.5rem;
 }
-footer div {
-  justify-content: space-between;
-  margin:  5%;
-    margin-bottom: 5%;
-    position: relative;
-    height: 25%;
+footer div{
+  justify-content: space-around;
+  margin: 5%;
+  margin-bottom: 5%;
+  position: relative;
+  height: 25%;
 }
 .footer-left{
   justify-content: flex-start;
@@ -451,157 +400,3 @@ footer div {
 .footer-right{
   align-self: flex-end;
 }
-/*
-MEDIA QUERIES
-*/
-/*MOBILE MEDIA QUERIES*/
-/*SMALL SCREENS*/
-@media (min-width: 200px) and (max-width: 700px){
-  /* .plantImage img{
-    max-height: 500px;
-    width: 250px;
-    position: static;
-} */
-.yggdrasil{
-  font-size: 1rem;
-}
-.meetNatureGoddesses{
-  margin-top: 25%;
-}
-.body{
-  background-color: #000;
-}
-/*Header*/
-.hero{
-  background-image:none;
-  background-color: #050f0a;
-  height: 200px;
-}
-.titleText{
-  display: flex;
-  justify-content: center;
-  flex-direction:column;
-  align-items:center;
-}
-.yggdrasil{
-  font-size: 8rem;
-}
-.realmOfLife{
-  font-size: 4rem;
-}
-/*Top Three Section*/
-.topTriRow h3{
-  font-size: 1.6rem;
-  text-align: center;
-}
-/*Bring To Life Section*/
-/* stack the slideshow below the paragraph section, more of a buffer between slideshow and goddess section*/
-.bringToLife{
-  margin-top: 12%;
-  margin-bottom: 15%;
-  display: flex;
-  flex-direction: column;
-}
-.mainBringToLife{
-  max-width: 100%;
-}
-.imgBringToLife{
-  max-width: 100%;
-  margin-left: 0;
-  margin-top: 65%;
-}
-/*Meet your nature goddesses*/
-/* could leave as is, could stack one by one vertically*/
-.meetNatureGoddesses{
-  margin-top: 55%;
-}
-.natureGoddesses{
-  margin-top: 5%;
-}
-/*Plant Gallary*/
-/* make image sizes smaller so theres less to scroll through. Turn off pop out animation */
-/* .plantbook{
-  display: flex;
-  flex-direction: row;
-  max-width: 22.6667%;
-} */
-.plantbook img:hover{
-display: none;
-/* visibility:hidden; */
-}
-.plantbook img:hover + .plantCaption{
-display: none;
-/* visibility:hidden; */
-}
-}
-
-/*Styles for individual plant pages*/
-.mainBringToLife h3{
-padding: 1% 0;
-text-transform: uppercase;
-font-size: 2rem;
-font-family: 'Josefin Sans', sans-serif;
-}
-.mainBringToLife p{
-padding: 1% 0;
-}
-.plantCare{
-display: flex;
-flex-direction: column;
-}
-.plantCare section{
-margin-left: 10%;
-
-margin-bottom: 2%;
-}
-.plantCare section{
-margin-top: 2%;
-}
-.plantCare section h2{
-text-transform: uppercase;
-font-size: 2rem;
-font-family: 'Josefin Sans', sans-serif;
-}
-.plantCare p{
-line-height: 2rem;
-font-size: 1.5rem;
-}
-.plantCare li{
-list-style: circle;
-line-height: 2rem;
-font-size: 1.5rem;
-}
-.plantInfoRow{
-margin-top: 17%;
-padding: 4%;
-border: 4px solid red;
-}
-.plantImage img{
-max-height: 100%;
-max-width: 80%;
-}
-.cartButton{
-display:flex;
-justify-content: center;
-margin-top: 2%;
-margin-bottom: 2%;
-font-size: 2rem;
-background-color: #daa520;
-color:#000;
-}
-/*
-MEDIA QURIES
-*/
-
-/* @media(min-width:768px){
-	.flex-box {-moz-align-items: stretch;-webkit-align-items: stretch;-ms-align-items: stretch;align-items: stretch;display: -moz-flex;display: -webkit-flex;display: -ms-flex;display: flex;-moz-flex-direction: row;-webkit-flex-direction: row;-ms-flex-direction: row;flex-direction: row;position: relative;overflow: hidden;}
-	.flex-box .f-right{order: 2;}
-	.box-text .t-right{text-align: right;}
-}
-@media(max-width:767px){
-	.flex-box .box-text{text-align: center;}
-	.flex-box .box-image {height: 400px;width: 100%;}
-}
-@media(max-width:500px){
-	.flex-box .box-text .box-text-inner p{font-size: 15px;}
-} */
