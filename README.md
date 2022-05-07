@@ -14,7 +14,7 @@ Yggdrasil is an elegant, but simple site designed to show off the equally elegan
 
 **Link to project:** https://yggdrasilrealm.netlify.app/
 
-![](https://cdn.glitch.global/a9c618c2-9fa5-464a-9484-c61f6a1e9f0f/Yggdrasil.gif?v=1651966427365)
+![](https://github.com/raeplusplus/Yggdrasil/blob/main/assets/Yggdrasil.gif)
 
 ## How It's Made:
 
