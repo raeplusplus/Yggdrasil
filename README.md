@@ -10,9 +10,10 @@ Yggdrasil is an elegant, but simple site designed to show off the equally elegan
 
 **Tech used:** HTML, CSS, JavaScript, GIMP
 
+
 This site was created from scratch - bare bones with HTML, styling with CSS and a touch of JavaScript for interactivity. I had a vision of a black, gold and green color scheme and various font styles to emphasize the elegance of a plant shop bearing a mystical name like Yggdrasil (the World Tree in Norse Mythology). I wanted to showcase a running theme of mythology and deities in the copy for the page as well. The nature guides aren't simply guides, but goddesses that are assisting you on the path of plant parenthood.
 
-I didn't want the interactivity of the site to bee too overwhelming, so I only used JavaScript for the slideshoow at the top and then some CSS animations for the hover behaviour of the featured plants.
+I didn't want the interactivity of the site to be too overwhelming, so I only used JavaScript for the slideshow at the top and then some CSS animations for the hover behaviour of the featured plants.
 
 ## Optimizations
 
