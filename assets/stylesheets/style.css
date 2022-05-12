@@ -274,20 +274,6 @@ PLANT GRID
     max-height: auto;
     max-width: auto;
   }
-/* .row2 {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-    max-height: auto;
-    max-width: auto;
-  }
-.row3 {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-    max-height: auto;
-    max-width: auto;
-  } */
 .column {
     flex: 25%;
     max-width: 25%;
@@ -295,7 +281,6 @@ PLANT GRID
     padding: 0 4px;
     position: relative; /*added change to fix jumping */
   }
-  
 .column img {
     margin: .25px;
     vertical-align: middle;
@@ -456,7 +441,7 @@ MEDIA QUERIES
   .hero{
     background-image:none;
     background-color: #050f0a;
-    height: 200px;
+    height: 100px;
   }
   .titleText{
     display: flex;
@@ -464,16 +449,20 @@ MEDIA QUERIES
     flex-direction:column;
     align-items:center;
   }
-  .yggdrasil{
-    font-size: 8rem;
+  .titleText h1{
+    font-size: 6rem;
+    padding-bottom: 4%;
   }
   .realmOfLife{
-    font-size: 4rem;
+    display: none;
   }
 /*Top Three Section*/
   .topTriRow h3{
     font-size: 1.6rem;
     text-align: center;
+  }
+  .topTriRow p{
+    display: none;
   }
 /*Bring To Life Section*/
 /* stack the slideshow below the paragraph section, more of a buffer between slideshow and goddess section*/
@@ -487,10 +476,7 @@ MEDIA QUERIES
     max-width: 100%;
   }
   .imgBringToLife{
-    max-width: 100%;
-    align-self: baseline;
-    margin-left: 0;
-    margin-top: 45%;
+    display: none;
   }
 /*Meet your nature goddesses*/
 /* could leave as is, could stack one by one vertically*/
@@ -500,14 +486,20 @@ MEDIA QUERIES
   .natureGoddesses{
     margin-top: 5%;
   }
+  .goddessName{
+    font-size: 1.5rem;
+  }
+  .goddessTitle{
+    font-size: 1.05rem;
+  }
 /*Plant Gallary*/
 /* make image sizes smaller so theres less to scroll through. Turn off pop out animation */
-.plantbook img:hover{
+/* .plantbook img:hover{
   display: none;
 }
 .plantbook img:hover + .plantCaption{
   display: none;
-}
+} */
 }
 
 /*Styles for individual plant pages*/
