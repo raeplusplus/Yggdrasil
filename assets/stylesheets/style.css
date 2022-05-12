@@ -359,12 +359,12 @@ PLANT GRID
 .flex-box .box-text {-moz-justify-content: center;-webkit-justify-content: center;-ms-justify-content: center;justify-content: center;-moz-align-items: center;-webkit-align-items: center;-ms-align-items: center;align-items: center;/* display: flex; */}
 .flex-box .box-text .box-text-inner{margin: 0 auto;max-width: 100%;}
 .flex-box .box-text .box-text-inner p{font-size: 18px;font-weight: 300;color: rgb(255, 255, 255);}
-.flex-box .box-text .title {}
+/* .flex-box .box-text .title {} */
 .flex-box .box-text .title h3{font-weight: 700;color: rgb(255, 255, 255);text-transform: uppercase;font-family: 'Playfair Display', serif;letter-spacing: 3px;}
 .flex-box .box-text .title span{font-size: 24px; font-weight:800;color: rgb(255, 189, 189);text-transform: uppercase;margin: 40px 0 20px;display: block;}
 
 .flex-box .box-text.light-style{background: #fff;}
-.flex-box .box-text.light-style .title h3{}
+/* .flex-box .box-text.light-style .title h3{} */
 .flex-box .box-text.dark-style{background: #262626; color: #bbb;}
 .flex-box .box-text.dark-style p{color: #ddd;}
 .flex-box .box-text.dark-style .title h3{color: #333856;}
