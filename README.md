@@ -4,7 +4,7 @@ Yggdrasil is an elegant, but simple site designed to show off the equally elegan
 
 **Link to project:** https://yggdrasilrealm.netlify.app/
 
-![](https://github.com/raeplusplus/Yggdrasil/blob/main/assets/Yggdrasil.gif)
+![](https://github.com/raeplusplus/Yggdrasil/blob/main/assets/Yggdrasil-Preview.gif)
 
 ## How It's Made:
 
