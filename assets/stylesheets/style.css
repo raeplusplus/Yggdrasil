@@ -119,7 +119,7 @@ HERO STYLES
 */
 .hero{
     display: flex;
-    height: 600px;
+    height: 300px;
     background-image: 
         url("https://cdn.glitch.global/a9c618c2-9fa5-464a-9484-c61f6a1e9f0f/darkLeafHeader-min.jpg?v=1649882080156");
     background-size: cover;
@@ -173,7 +173,7 @@ BRING TO LIFE Section
 */
 .bringToLife {
     margin:  10%;
-    margin-bottom: 15%;
+    /* margin-bottom: 15%; */
     margin-top: 8%;
     position: relative;
     height: 25%;
@@ -206,7 +206,7 @@ Nature Guides
 .meetNatureGoddesses {
     font-size: 4rem;
     margin-bottom: 3%;
-    margin-top: 8%;
+    margin-top: 4%;
     font-family: 'Megrim', cursive;
     text-align: center;
     text-transform: uppercase;
@@ -221,12 +221,12 @@ Nature Guides
     max-width: 100%;
   }
 .goddessName{
-    font-size: 2.2rem;
+    font-size: 3.3rem;
     font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
 }
 .goddessTitle {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: 'Julius Sans One', sans-serif;
     text-transform: lowercase;
 }
